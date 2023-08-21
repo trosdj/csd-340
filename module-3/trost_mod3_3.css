@@ -1,0 +1,67 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Karla', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+li {
+    font-weight: 300;
+}
+
+.side {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    padding: 10px;
+    margin: 10px;
+}
+
+#left {
+    border: 1px solid red;
+    border-radius: 15px;
+}
+
+ul {
+    list-style: upper-roman;
+}
+
+ol, ul {
+    padding: 10px;
+    list-style-position: inside;
+}
+
+#right {
+    border: 1px dashed red;
+    border-radius: 15px;
+}
+
+.landing {
+    width: 100%;
+    margin-top: 60%;
+}
+
+a {
+    float: right;
+    margin-bottom: 20px;
+    color: #1a0b08;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #615843;
+}
+
+a:hover {
+    color: #5c131b;
+    text-decoration: underline;
+}
