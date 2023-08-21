@@ -1,0 +1,40 @@
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Karla', sans-serif;
+    font-weight: 800;
+    background: #6e1722;
+    color: #e8e9d8;
+    border: 1px solid #d6a800;
+    padding: 10px;
+}
+
+a {
+    color: #1a0b08;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #615843;
+}
+
+a:hover {
+    color: #5c131b;
+    font-weight: 900;
+}
+
+
