@@ -1,0 +1,58 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h3 {
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    font-weight: 800;
+    background: rgba(110, 23, 34, 1);
+    color: rgba(232, 233, 216, 1);
+    padding: 10px;
+}
+
+figure {
+    text-align: center;
+}
+
+img {
+    width: 100px;
+}
+
+figcaption {
+    font-style: italic;
+    font-style: 0.75em;
+}
+
+#image-gallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 10%;
+    column-gap: 25px;
+}
+
+.grid-item {
+    border: 1px solid rgba(110, 23, 34, 1);
+    background-color: rgba(110, 23, 34, 0.05);
+}
+
+.landing {
+    width: 100%;
+    margin-top: 15%;
+}
+
+a {
+    float: right;
+    margin-bottom: 20px;
+    color: rgba(26, 11, 8, 1);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgba(97, 88, 67, 1);
+}
+
+a:hover {
+    color: rgba(110, 23, 34, 1);
+    text-decoration: underline;
+}
