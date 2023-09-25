@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        var variableOne = "Every day";
+        var variableTwo = "Camp Blood";
+        var variableThree = "scared";
+    </script>
+    <meta name="description" content="Assignment 9.3 for CSD340">
+    <meta name="author" content="DJ Trost">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="trost_mod9_3.css">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 9.3: JavaScript - Part 1</h1>
+        <h2>Three Classic Horror Movie Quotes</h2>
+        <p>
+            She wanted me to tell you she saw you dance. She said, when you were little, 
+            you and her had a fight, right before your dance recital. You thought she 
+            didn’t come see you dance. She did. She hid in the back so you wouldn’t see. 
+            She said you were like an angel. She said you came to the place where they 
+            buried her. Asked her a question? She said the answer is… 
+            “<span id="every-day">_________</span>.” What did you ask? 
+        </p>
+        <p>- Cole Sear, The Sixth Sense</p>
+
+        <p>
+            I just want to apologize to Mike’s mom and Josh’s mom and my mom. And I’m 
+            sorry to everyone. I was very naive. I am so, so sorry for everything that 
+            has happened. Because in spite of what Mike says now, it is my fault. Because 
+            it was my project and I insisted. I insisted on everything. I insisted we 
+            weren’t lost. I insisted we keep going. I insisted that we walk south. 
+            Everything had to be my way and this is where we’ve ended up. And it’s all 
+            because of me that we’re here now: hungry and cold and hunted. I love you mom 
+            and dad. I am so sorry. … What is that? I’m <span id="scared">_________</span> 
+            to close my eyes and I’m scared to open them. I’m going to die out here. 
+        </p>
+        <p>- Heather Donahue, The Blair Witch Project</p>
+
+        <p>
+            Oh, this place... It should never have been a camp. Not for children. 
+            They had so much trouble here. <span id="camp-blood">_________</span>. 
+            You know a boy drowned the year before those two others were killed? 
+            An accident? It was inadequate supervision. The counselors were not 
+            paying enough attention... They were making love when that boy drowned.
+        </p>
+        <p>- Pamela Voorhees, Friday the 13th</p>
+
+        <p>
+            <button type="button" onclick="document.getElementById('every-day').innerHTML = variableOne">every day</button> <br>
+            <button type="button" onclick="document.getElementById('scared').innerHTML = variableThree">scared</button> <br>
+            <button type="button" onclick="document.getElementById('camp-blood').innerHTML = variableTwo">camp blood</button> <br>
+        </p>
+    </div>
+</body>
+</html>
