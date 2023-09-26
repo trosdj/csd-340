@@ -60,6 +60,7 @@ div#container {
     background-color: var(--dark1);
     color: var(--light2);
     font-weight: 400;
+    padding: 10px;
 }
 
 .card-content {
