@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Assignment 10.3 for CSD340">
+    <meta name="author" content="DJ Trost">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700;800&family=Lato:wght@300;400;700;900&display=swap');
+    </style>
+    <script>
+        var tasks = [];
+        let txt = "";
+
+
+        function addTask(){
+            let task = document.getElementById('task').value;
+            tasks.push(task)
+            document.getElementById('task').value='';
+        }
+
+        function displayTasks() {
+            txt = "";
+
+            for(i = 0; i < tasks.length; ++i) {
+                txt += (i + 1) + ".) " + tasks[i] + "<br>";
+            }
+
+            document.getElementById("list").innerHTML = txt;
+        }
+
+        function deleteTask() {
+            let i = document.getElementById('index').value - 1;
+            tasks.splice(i, 1);
+
+            document.getElementById('index').value='';
+        }
+
+        function deleteAll() {
+            while(tasks.length > 0) {
+                tasks.pop()
+            }
+        }
+    </script> 
+    <link rel="stylesheet" href="trost_mod11_2.css">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 11.2: JavaScript - Part 3</h1>
+        <div class="card">
+            <div class="card-title">To Do List:</div>
+            <div class="card-content">
+                <p>
+                    Type the item for your to do list and click "add" to add it to the list. Click "display" to show
+                    the current items on your to do list. And as you complete a task, delete it from your list by typing
+                    the item's number and clicking the "delete" button.
+                </p>
+                <form action="">
+                    <label id="task-label" for="task">Task: <input id="task" type="text" placeholder="To Do" required></label>
+                    <button type="button" id="add" onclick="addTask()">add</button>
+                    <button type="button" id="display" onclick="displayTasks()">display</button> <p id="divider">&emsp;|&emsp;</p>
+                    <label id="index-label" for="index">Number to delete: <input id="index" type="text" placeholder="1"></label>
+                    <button type="button" id="delete" onclick="deleteTask()">delete</button>
+                </form>
+                <hr />
+                <p id="list"></p>
+            </div>
+        </div>
+        <footer>
+            <a href="../index.html">Back to Landing Page</a>
+        </footer>
+    </div>
+</body>
+</html>

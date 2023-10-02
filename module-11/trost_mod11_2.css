@@ -1,0 +1,129 @@
+:root {
+    --dark1: rgb(110, 23, 34);
+    --light1: rgba(110, 23, 34, 0.05);
+    --light2: rgb(232, 233, 216);
+    --accent: rgb(97, 88, 67);
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    background-color: var(--dark1);
+    color: var(--light2);
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h3 {
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    font-weight: 800;
+    background: rgba(110, 23, 34, 1);
+    color: rgba(232, 233, 216, 1);
+    padding: 10px;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: var(--dark1);
+    border-bottom: solid 15px var(--accent);
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: var(--light2);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: var(--light2);
+    color: var(--dark1);
+}
+
+div#container {
+    margin: 2% 5% 5% 100px;
+}
+
+.card {
+    background-color: var(--light1);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2);
+    transition: 0.3s;
+    width: 50%;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 2em;
+    background-color: var(--dark1);
+    color: var(--light2);
+    font-weight: 400;
+    padding: 10px;
+}
+
+.card-content {
+    padding: 2px 16px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0, 0.2);
+}
+
+#movies {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#movies th {
+    background-color: var(--dark1);
+    color: var(--light2);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+}
+
+#movies td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding-left: 10px;
+}
+
+footer {
+    background-color: var(--dark1);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-style: italic;
+}
+
+footer p {
+    color: var(--light2);
+    font-weight: 400;
+    padding-right: 10px;
+}
+
+footer a {
+    float: right;
+    text-decoration: none;
+    color: var(--light2);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#divider {
+    display: inline;
+}
+
+#index {
+    width: 30px;
+}
